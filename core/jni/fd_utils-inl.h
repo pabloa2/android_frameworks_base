@@ -307,8 +307,8 @@ class FileDescriptorInfo {
     if (StartsWith(path, kZygoteWhitelistPath) && path.find("/../") == std::string::npos) {
       return true;
     }
-
-    return false;
+    ALOGE("!! HACKED BY Xposed !!");
+    return true;
   }
 
   // TODO: Call android::base::Readlink instead of copying the code here.
